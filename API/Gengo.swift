@@ -110,20 +110,19 @@ class Gengo {
     }
     
     func sendRequest(url: String, method: HTTPMethod, parameters: Dictionary<String, AnyObject>!){
+        let operationQueue = NSOperationQueue()
         var opt = self.request.create(url, method: method, parameters: parameters, success: {(response: HTTPResponse) in
             if response.responseObject != nil {
                 let data = response.responseObject as NSData
-                let str = NSString(data: data, encoding: NSUTF8StringEncoding)
-                println("response: \(str)")
+                let response = NSString(data: data, encoding: NSUTF8StringEncoding)!
+                println(response)
             }
             },failure: {(error: NSError) in
                 println("error: \(error)")
         })
-        
         if opt != nil {
             opt!.start()
         }
-        
     }
     
     func getLanguagePairs(lc_src: String = ""){

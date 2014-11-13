@@ -29,7 +29,7 @@ class ViewController: UIViewController {
         
         
         //gengo.getLanguagePairs(/*lc_src: "fr"*/)
-        //gengo.getAccountStats()
+        gengo.getAccountStats()
         //gengo.getAccountBalance()
         //gengo.getPreferredTranslators()
         
@@ -67,7 +67,7 @@ class ViewController: UIViewController {
         //gengo.getTranslationJobComments(1056501)
         //gengo.getTranslationJobs(status: "reviewable")
         //gengo.getTranslationJobs(["1053535", "1053533"])
-        gengo.getGlossaryList()
+        //gengo.getGlossaryList()
     }
 }
 
