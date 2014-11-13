@@ -75,7 +75,6 @@ class Gengo {
         self.api_version = api_version
         self.baseURl = baseURl + "v\(self.api_version)"
         
-        //TODO headers as a parameter
         self.request = HTTPTask()
         self.request.baseURL = self.baseURl
         self.request.requestSerializer = HTTPRequestSerializer()
@@ -91,7 +90,7 @@ class Gengo {
         ]
         
         
-        let hmac = SwiftHMAC().hmacTest(timestamp.description, key: self.private_key)
+        let hmac = SwiftHMAC().hmac(timestamp.description, key: self.private_key)
         params["api_sig"] = hmac
 
     }

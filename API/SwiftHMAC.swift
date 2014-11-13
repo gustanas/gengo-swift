@@ -26,8 +26,7 @@ class SwiftHMAC
         return base64EncodedHMAC
     }
     
-    func hmacTest(text: String, key:String) -> String{
-        let computedHMAC = HMAC.hmacsha1(text, key:key)
-        return computedHMAC
+    func hmac(text: String, key:String) -> String{
+        return HMAC.hmacsha1(text, key:key)
     }
 }

@@ -29,7 +29,7 @@ class ViewController: UIViewController {
         
         
         //gengo.getLanguagePairs(/*lc_src: "fr"*/)
-        gengo.getAccountStats()
+        //gengo.getAccountStats()
         //gengo.getAccountBalance()
         //gengo.getPreferredTranslators()
         
@@ -50,7 +50,7 @@ class ViewController: UIViewController {
                 ]
             ]
         ]
-        //gengo.postTranslationJobs(data)
+        gengo.postTranslationJobs(data)
         //gengo.getTranslationJob(1056501)
         var action = [
             "action": "approve"
