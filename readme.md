@@ -35,7 +35,7 @@ Just include the SwiftHTTP folder in your project and the Gengo.swift file as we
     gengo.postTranslationJobs(data)
 
 
-Result:
+Output:
 
     {"opstat":"ok","response":{"order_id":"306930","job_count":1,"credits_used":"0.25","currency":"USD"}}
 
