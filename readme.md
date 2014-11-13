@@ -63,6 +63,8 @@ Result:
 - translate/service/languages (GET) : Returns a list of supported languages and their language codes.
 
 ##To do
-- More test
-- translate/service/quote (POST) : Returns credit quote and unit count for text based on content, tier, and language pair for job or jobs submitted.
-- translate/service/quote/file (POST) : Uploads files to Gengo and returns a quote for each file, with an identifier for when client is ready to place the actual order. Price quote is based on content, tier, and language pair.
+- [ ] Better documentation
+- [ ] More test
+- [ ] translate/service/quote (POST) : Returns credit quote and unit count for text based on content, tier, and language pair for job or jobs submitted.
+- [ ] translate/service/quote/file (POST) : Uploads files to Gengo and returns a quote for each file, with an identifier for when client is ready to place the actual order. Price quote is based on content, tier, and language pair.
+
