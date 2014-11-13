@@ -1,7 +1,7 @@
 Gengo Swift Library (for the [Gengo API](http://gengo.com/api/))
 ================================================================================================================================
 
-This is a swift library made for the [Gengo](http://www.gengo.com) API. It allows users to order and manage their translations directly from their iOS devices. This is still a work in progress so any contributions is welcome :) 
+This is a swift library made for the [Gengo](http://www.gengo.com) API. It allows users to order and manage their translations directly from their iOS devices. This is still a work in progress so any contributions are welcome :) 
 
 ## Installing
 
