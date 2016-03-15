@@ -8,32 +8,32 @@ This is a swift library made for the [Gengo](http://www.gengo.com) API. It allow
 Just include the SwiftHTTP folder in your project and the Gengo.swift file as well.
 
 ## Usage
-
-    //Initialization
-    var private_key = "MY_PRIVATE_KEY"
-    var public_key = "MY_PUBLIC_KEY"
-    let gengo = Gengo(public_key: public_key, private_key: private_key, useSandbox: true)
+```swift
+//Initialization
+let private_key = "MY_PRIVATE_KEY"
+let public_key = "MY_PUBLIC_KEY"
+let gengo = Gengo(public_key: public_key, private_key: private_key, useSandbox: true)
     
-    //post a translation job
-    var data = [
-            "jobs": [
-                "job_1": [
-                    "type": "text",
-                    "slug": "Single :: English to Japanese",
-                    "body_src": "Testing Gengo API library calls.",
-                    "lc_src": "en",
-                    "lc_tgt": "ja",
-                    "tier": "standard",
-                    "auto_approve": 0,
-                    "comment": "HEY THERE TRANSLATOR",
-                    "custom_data": "your optional custom data, limited to 1kb.",
-                    "force":  0,
-                    "use_preferred": 0
-                ]
+//post a translation job
+var data = [
+        "jobs": [
+            "job_1": [
+                "type": "text",
+                "slug": "Single :: English to Japanese",
+                "body_src": "Testing Gengo API library calls.",
+                "lc_src": "en",
+                "lc_tgt": "ja",
+                "tier": "standard",
+                "auto_approve": 0,
+                "comment": "HEY THERE TRANSLATOR",
+                "custom_data": "your optional custom data, limited to 1kb.",
+                "force":  0,
+                "use_preferred": 0
             ]
         ]
-    gengo.postTranslationJobs(data)
-
+    ]
+gengo.postTranslationJobs(data)
+```
 
 Output:
 
