@@ -68,3 +68,8 @@ Output:
 - [ ] translate/service/quote (POST) : Returns credit quote and unit count for text based on content, tier, and language pair for job or jobs submitted.
 - [ ] translate/service/quote/file (POST) : Uploads files to Gengo and returns a quote for each file, with an identifier for when client is ready to place the actual order. Price quote is based on content, tier, and language pair.
 
+
+
+Twitter: [@gusta_nas](https://twitter.com/gusta_nas)
+
+Website: [gustanas.co](http://www.gustanas.co/)
